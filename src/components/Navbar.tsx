@@ -138,7 +138,7 @@ export function Navbar({
 
       {/* Right Side - Dark Mode Toggle and Profile */}
       <div className="flex items-center gap-5">
-        {/* Dark Mode Toggle */}
+        {/* Dark Mode Toggle
         <button 
           onClick={toggleDarkMode}
           className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -151,6 +151,7 @@ export function Navbar({
             <Moon className="w-5 h-5 text-[#364153]" aria-hidden="true" />
           )}
         </button>
+         */}
 
         {/* Profile */}
         <div className="relative">

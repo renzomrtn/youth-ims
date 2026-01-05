@@ -138,28 +138,30 @@ export function DashboardContent({ darkMode, viewMode }: DashboardContentProps) 
   return (
     <div className="flex flex-col h-full bg-[#f3f3f3] dark:bg-gray-900">
       <div className="p-8 space-y-10">
-        {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+          {/* Stat Cards Section 
+
           {stats.map((stat, index) => (
             <StatCard key={index} {...stat} darkMode={darkMode} />
           ))}
+                          */}
+
         </div>
 
-        {/* Bottom Section: Recent Activity and Budget Expenditures */}
+        {/* Bottom Section: Recent Activity and Budget Expenditures 
         <div className="flex gap-2.5">
-          {/* Recent Activity - Left Side */}
+          {/* Recent Activity - Left Side 
           <div className="flex-1">
             <RecentActivity activities={activities} darkMode={darkMode} />
           </div>
 
-          {/* Budget Expenditures Overview - Right Side */}
+          {/* Budget Expenditures Overview - Right Side 
           <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 h-[492px] flex flex-col">
-            {/* Header */}
+            {/* Header 
             <div className="border-b border-gray-200 dark:border-gray-700 px-6 py-6 shrink-0">
               <h2 className="text-[#101828] dark:text-white text-xl">Budget Expenditures Overview</h2>
             </div>
             
-            {/* Pie Chart Content 
             <div className="p-6 flex-1 flex items-center">
               <div className="flex items-center gap-8 w-full">
                 {/* Pie Chart 
@@ -199,9 +201,9 @@ export function DashboardContent({ darkMode, viewMode }: DashboardContentProps) 
                 </div>
               </div>
             </div>
-            */}
           </div>
         </div>
+          */}
       </div>
     </div>
   );

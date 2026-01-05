@@ -17,7 +17,7 @@ interface Personnel {
   avatarColor: string;
 }
 
-export function PersonnelContent({ darkMode, viewMode }: PersonnelContentProps) {
+export function PersonnelContent({  }: PersonnelContentProps) {
   const [selectedYear, setSelectedYear] = useState("2025");
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -149,7 +149,7 @@ export function PersonnelContent({ darkMode, viewMode }: PersonnelContentProps) 
 
   return (
     <div className="flex flex-col h-full bg-[#f3f3f3] dark:bg-gray-900">
-      {/* Year Tabs */}
+      {/* Year Tabs 
       <div className="bg-white dark:bg-gray-800 px-8 border-b border-gray-200 dark:border-gray-700">
         <div className="flex gap-8">
           {years.map((year) => (
@@ -170,6 +170,7 @@ export function PersonnelContent({ darkMode, viewMode }: PersonnelContentProps) 
           ))}
         </div>
       </div>
+      */ }
 
       {/* Content */}
       <div className="flex-1 p-8">
@@ -191,7 +192,7 @@ export function PersonnelContent({ darkMode, viewMode }: PersonnelContentProps) 
             </div>
           </div>
 
-          {/* Table */}
+          {/* Table 
           <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
             <table className="w-full">
               <thead className="bg-gray-50 dark:bg-gray-700 border-b border-gray-200 dark:border-gray-600">
@@ -256,6 +257,7 @@ export function PersonnelContent({ darkMode, viewMode }: PersonnelContentProps) 
               </div>
             )}
           </div>
+          */}
 
           {/* Pagination */}
           <div className="flex items-center justify-center gap-2 mt-6">
